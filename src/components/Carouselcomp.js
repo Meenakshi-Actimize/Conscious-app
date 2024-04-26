@@ -3,11 +3,11 @@ import Carousel from 'react-material-ui-carousel';
 
 function Carouselcomp() {
     const imagedata = [
-        { img: './images/Screenshot 2024-04-04 145205.png' },
-        { img: './images/Screenshot 2024-04-04 145052.png' },
-        { img: './images/Screenshot 2024-04-04 145115.png' },
-        { img: './images/Screenshot 2024-04-04 145143.png' },
-        { img: './images/Screenshot 2024-04-04 153240.png' }
+        { img: './images/carousel1.png' },
+        { img: './images/carousel2.png' },
+        { img: './images/carousel3.png' },
+        { img: './images/carousel4.png' },
+        { img: './images/carousel5.png' }
     ];
 
     return (

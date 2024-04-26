@@ -2,7 +2,7 @@ import { Typography } from '@mui/material';
 import * as React from 'react';
 import { Grid } from '@mui/material';
 import { Button } from '@mui/material';
-import Card32items from './Card32items';
+import MyComponent from './Card32items'
 function Card3items() {
     return (
         <>
@@ -25,8 +25,7 @@ function Card3items() {
                 <img src="./images/card2-2.jpg" />
             </Grid>
             <Typography variant="h6" color="#839B5E" sx={{marginTop:'65px'}}><strong>FEATURED PRODUCTS</strong></Typography>
-            <Card32items />
-            
+            <MyComponent />
 
 
             <Grid>

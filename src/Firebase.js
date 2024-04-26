@@ -9,6 +9,7 @@ import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
   apiKey: "AIzaSyCnu1uzoRSYoHWgBLuinUM1wLMW8Huc7_c",
   authDomain: "conscious-app-8d882.firebaseapp.com",
+  databaseURL: "https://conscious-app-8d882-default-rtdb.firebaseio.com",
   projectId: "conscious-app-8d882",
   storageBucket: "conscious-app-8d882.appspot.com",
   messagingSenderId: "552786608472",
@@ -19,3 +20,29 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+
+
+// Import Axios
+import axios from 'axios';
+
+// Function to fetch image data from Firebase storage and log it to the console
+const fetchAndLogImageData = async (imageUrl) => {
+  try {
+    // Make a GET request using Axios
+    const response = await axios.get(imageUrl, {
+      responseType: 'arraybuffer' // Specify response type as arraybuffer to handle binary data
+    });
+
+    // Log the response data to the console
+    console.log(response.data);
+  } catch (error) {
+    // Handle any errors
+    console.error('Error fetching image data:', error);
+  }
+};
+
+// Example Firebase storage image URL
+const imageUrl = 'https://conscious-app-8d882-default-rtdb.firebaseio.com/images/-Nw4O-00puYxaYtaELGJ.json';
+
+// Call the function to fetch and log image data
+fetchAndLogImageData(imageUrl);

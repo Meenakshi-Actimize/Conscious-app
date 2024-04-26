@@ -1,2 +1,2 @@
-export const GET_DATA = 'get_data';
-// export const SAVE_DATA = 'save_data';
+export const GET_DATA = 'GET_DATA';
+export const GET_CARD3DATA = 'GET_CARD3DATA';

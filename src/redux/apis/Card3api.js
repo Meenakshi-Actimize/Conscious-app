@@ -1,12 +1,12 @@
 import axios from "axios";
 // import { BaseUrl } from "./CommonApi";
 
-const url="https://conscious-app-8d882-default-rtdb.firebaseio.com/firstcard"
+const url="https://conscious-app-8d882-default-rtdb.firebaseio.com/secondcarddata"
 
-export const GetCardsData = async () => {
+export const GetCards3Data = async () => {
     try{
         const response = await axios.get(`${url}.json`)
-        console.log("This is Data from the FireBase ----->", response);
+        console.log("This is Data from the 3FireBase ----->", response);
         const jsonData = response.data;
         console.log('This is json data', jsonData);
         if(jsonData === null) {
